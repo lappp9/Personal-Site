@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luke A. Parham</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>	
+
+</head>
+<body>
+	<div class="topbar">
+		<div class="fill">
+    		<div class="container">
+				<a class="brand" href="/">Luke Parham</a>
+        		<ul class="nav">
+        			<li id = "#" class = "nav"><a class = "contact" href="/contact">Contact Me</a></li>
+        		</ul>
+      		</div>
+    	</div>
+	</div>  
+  
+  <div class = "content">
+  	<h1 class = "mainHeader">Computer Science</h1>
+  </div> 
+  	<article id = "content" class = "hero-unit">
+	<article class = "">
+		<%= yield %>
+	</article>
+</body>
+</html>
