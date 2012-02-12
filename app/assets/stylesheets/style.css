@@ -1,0 +1,19 @@
+.content{
+	margin: 0;
+	width: 100%;
+	color: white;
+	background-image: url('');
+	height: 60px;
+	padding-top: 25px;
+	padding-bottom: 0px;
+	overflow: hidden;
+}
+
+div{
+	border: 0px solid black;
+	
+}
+
+.mainHeader{
+	padding-left: 50px;
+}
