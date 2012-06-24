@@ -1,6 +1,10 @@
 LukesResume::Application.routes.draw do
   match '/', :to => 'pages#home'
   match '/about', :to => 'pages#about'
+  match '/projects', :to => 'pages#projects'
+  match '/research', :to => 'pages#research'
+  match '/thoughts', :to => 'pages#thoughts'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

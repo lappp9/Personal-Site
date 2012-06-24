@@ -19,7 +19,8 @@
 	          <a class="brand " href="/">Luke Parham</a>
 	          <div class="nav-collapse">
 	            <ul class="nav">
-	              <li class="<%= (request.fullpath == '/contact' ? 'active' : ' ') %> "><a href="/about">About Me</a></li>
+	              <li class="<%= (request.fullpath == '/' ? 'active' : ' ') %> "><a href="/">Home</a></li>
+	              <li class="<%= (request.fullpath == '/about' ? 'active' : ' ') %> "><a href="/about">About Me</a></li>
 	            </ul>
 	          </div><!--/.nav-collapse -->
 	        </div>
