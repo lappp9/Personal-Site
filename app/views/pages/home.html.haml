@@ -1,54 +1,6 @@
 .container
-    .row
-        .span5.offset1
-            %ul.nav.nav-pills
-                %li.active.1
-                    =link_to "Projects", "/projects"
-                %li.2 
-                    =link_to "Research", "/research"
-                %li.3
-                    =link_to "Resume", "/resume.pdf"
-                %li.4
-                    =link_to "Thoughts", "/thoughts"
-    .row
-        .span9.columns.offset1
-            #myCarousel.carousel.slide
-                .carousel-inner
-                    .item.active
-                        =image_tag "projects.jpg"
-                        .carousel-caption
-                            %h4 Projects
-                            %p Some examples of the various projects I've worked on over the years.
-                    .item
-                        =image_tag "researchMashup.jpg"
-                        .carousel-caption
-                            %h4 Research
-                            %pStuff
-                    .item
-                        %a{"href" => "/resume.pdf"} 
-                            =image_tag "resume.jpg"
-                        .carousel-caption
-                            %h4 Resume
-                            %p Click for full resume.
-
-                    .item
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        =image_tag "bootstrap-mdo-sfmoma-03.jpg"
-                        .carousel-caption
-                            %h4 Thoughts
-                            %p Stuff
-		
-                %a.left.carousel-control{"href"=>"#myCarousel", "data-slide"=>"prev"} ‹
-                %a.carousel-control.right{"data-slide" => "next", "href" => "#myCarousel"} ›
+  .row
+    .span8
+      =image_tag "luke.jpeg" , :class => "pic"
+    .span4
+      %h1 Hey, I'm Luke.

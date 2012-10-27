@@ -1,8 +1,14 @@
 body{
-	background-color:black;
+	background-color:#111;
 	color: white;
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Regular'), local('Lato-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+
 }
 a{
+  
 	color: white;
 }
 
@@ -28,3 +34,4 @@ div{
 .mainHeader{
 	padding-left: 50px;
 }
+
