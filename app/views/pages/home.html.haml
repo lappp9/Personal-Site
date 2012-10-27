@@ -1,6 +1,18 @@
 .container
   .row
-    .span8
-      =image_tag "luke.jpeg" , :class => "pic"
     .span4
       %h1 Hey, I'm Luke.
+  %br
+  .row
+    .span9
+      %blockquote
+        %p 
+          I have Bachelor's of Science degrees in both Computer Science and Information Technology from the University of Missouri - Columbia.  My interests are split pretty evenly between going to Ph.D. school to do Computer Science research and getting into the startup scene. I'm always trying to learn new things and I like the idea of being able to keep that mindset throughout my life. That's why it's so fun to study code and scripture. 
+      %br
+      %br
+      =link_to image_tag("twitter.jpg", :class=>"btn"), "http://twitter.com/lukeparham"
+      =link_to image_tag("facebook.jpg", :class=>"btn"), "http://facebook.com/lukeparham"
+      =link_to image_tag("github.jpg", :class=>"btn"), "https://github.com/lappp9"
+    .span3
+      =image_tag "luke.jpeg" , :class => "img-polaroid"
+    
