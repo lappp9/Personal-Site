@@ -1,0 +1,78 @@
+%h2 Projects
+%br 
+#myTabs.tabbable.tabs-left
+  %ul#tab.nav.nav-tabs
+    %li.active
+      %a{"href"=>"#rails","data-toggle"=>"tab"} Rails
+    %li
+      %a{"href" => "#c", "data-toggle" => "tab"} C/C++
+    %li
+      %a{"href" => "#js","data-toggle" => "tab"} JavaScript
+    %li
+      %a{"href"=> "#python", "data-toggle"=> "tab"} Python
+    %li
+      %a{"href"=>"#objc", "data-toggle"=>"tab"} Objective-C
+
+  #myTabContent.tab-content
+    #rails.tab-pane.active
+      .row
+        .span4.data-original-title
+          %h4 ChickenChasing.com 
+          .project
+            %a.btn{"href" => "http://chickenchasing.herokuapp.com"}
+              =image_tag "chickenLogo2.jpg"
+        .span4.data-original-title
+          %h4 City on a Hill
+          .project
+            %a.btn{"href" => "http://cityonahillstl.herokuapp.com"}
+              =image_tag "logo.jpg"
+        .span4.data-original-title
+          %h4 CS3380 Class Website
+          .project
+            %a.btn{"href" => "http://cs3380lab.herokuapp.com"}
+              = image_tag "database.png"
+
+    #c.tab-pane
+      .row
+        .span5.data-original-title
+          %h4 The Speed of Light
+          .project
+            %a.btn{"href" => "/speed_of_light"}
+              = image_tag "gameplay.png"
+      
+        .span5.data-original-title
+          %h4 My Very Own Shell
+          .project
+            %a.btn{"href" => "/shell"}
+              = image_tag "shell.png"
+
+    #js.tab-pane	
+      .row
+        .span5.data-original-title
+          %h4 Mortality Risk Calculator (Cerner)
+          .project
+            %a.btn{"href" => "/mortality_calculator"}
+              = image_tag "mortality.png" 
+
+        .span5.data-original-title
+          %h4 MU Hospital Patient List MPages (Cerner)
+          .project
+            %a.btn{"href" => "/mpages"}
+              = image_tag "mpage.png"
+
+    #python.tab-pane
+      .row
+        .span5.data-original-title
+          %h4 Capstone
+          .project
+            %a.btn{"href" => "/capstone"}
+              = image_tag "corobot.jpeg" 
+
+    #objc.tab-pane
+      .row
+        .span5.data-original-title
+          %h4 Redi Entrepreneurship App
+          .project
+            %a.btn{"href" => "/redi_app"}
+              =image_tag "rediApp.png"
+
