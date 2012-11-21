@@ -1,15 +1,22 @@
 %p#notice= notice
-.hero-unit
-  %p
-    %h1
-      = @post.title
-    %h3 
-      = @post.created_at.strftime "%m/%d/%Y"
-  %hr
-  %p
-    =if(!@post.pic.empty?) then image_tag %Q{#{@post.pic}}, {:align => "right"} end
-  %p
-    =@post.body
+.row
+  .span9
+    .hero-unit
+      %p
+        %h1
+          = @post.title
+        %h3 
+          = @post.created_at.strftime "%m/%d/%Y"
+      %hr
+      %p
+        =if(!@post.pic.empty?) then image_tag %Q{#{@post.pic}}, {:align => "right"} end
+      %p
+        =@post.body
 
-  %br
-  = link_to 'Back', posts_path
+      %br
+      = link_to 'Back', posts_path
+  .span3
+    .hero-unit
+      .menu 
+        =debug @posts 
+        = #@posts.each do |post| link_to post.title, posts_path(post) end

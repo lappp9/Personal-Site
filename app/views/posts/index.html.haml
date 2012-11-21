@@ -1,14 +1,17 @@
+%p#notice= notice
 - @posts.each do |post|
-  .hero-unit
-    %p
-      %h1
-        = post.title
-      %h3 
-        = post.created_at.strftime "%m/%d/%Y"
-    %hr
-    %p
-      =if(!post.pic.empty?) then image_tag %Q{#{post.pic}}, {:align => "right"} end
-    %p
-      =post.body
-    = link_to 'Read More', post_path(post)
-    %br
+  .row
+    .span12
+      .hero-unit
+        %p
+          %h1
+            = post.title
+          %h3 
+            = post.created_at.strftime "%m/%d/%Y"
+        %hr
+        %p
+          %h2
+            This is where the preview would go
+            = #post.preview
+        %br
+        = link_to 'Read More', post_path(post) 
