@@ -1,8 +1,9 @@
-.hero-unit{
-  color: #999;
-}
-.hero-unit > h1, h2, h3, h4, h5, h6{
+
+.hero-unit > p, h1, h3, h5, h6 {
   color: #111;
+}
+h1 {
+  color: white;
 }
 body{
 	background-color:#111;
@@ -24,7 +25,6 @@ img{
 .content{
 	margin: 0;
 	width: 100%;
-	color: white;
 	background-image: url('');
 	height: 60px;
 	padding-top: 25px;
@@ -40,4 +40,6 @@ div{
 .mainHeader{
 	padding-left: 50px;
 }
-
+.hero-unit > h2{
+  color: #111;
+}

@@ -1,7 +1,6 @@
 LukesResume::Application.routes.draw do
-  match '/projects', :to => 'pages#projects'
-  resources :projects
 
+  resources :projects
   resources :posts
 
   match '/', :to => 'pages#home'
