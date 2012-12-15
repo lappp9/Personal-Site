@@ -4,6 +4,7 @@ gem 'rails', '3.1.1'
 gem 'haml'
 gem 'haml-rails'
 gem 'thin'
+gem 'newrelic_rpm'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 #
