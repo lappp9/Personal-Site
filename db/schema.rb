@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(:version => 20121102234421) do
   end
 
   create_table "projects", :force => true do |t|
+    t.string   "picture"
+    t.string   "lang"
     t.string   "title"
     t.string   "url"
     t.text     "description"

@@ -2,7 +2,17 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.all
+    p = Project.all
+    @langs = p.collect{ |p| p.lang }
+
+    @projects = Hash.new
+
+    p.each do |project|
+      if !@projects.has_key? project.lang
+        @projects["#{project.lang}"] = Array.new
+      end
+      @projects["#{project.lang}"] << project
+    end
 
     respond_to do |format|
       format.html # index.html.erb
